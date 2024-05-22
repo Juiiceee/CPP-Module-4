@@ -19,6 +19,7 @@ Animal::Animal(const Animal &obj)
 
 Animal &Animal::operator=(const Animal &obj)
 {
+	std::cout << "Copy assignment operator called\n";
 	if (this != &obj)
 	{
 		this->_type = obj._type;
@@ -33,5 +34,4 @@ Animal::~Animal()
 
 void Animal::makeSound()
 {
-	std::cout << "Feur!!!\n";
 }

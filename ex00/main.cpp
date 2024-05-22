@@ -7,4 +7,8 @@ int main()
 {
 	Animal Ani;
 	Ani.makeSound();
+	Cat Elliot;
+	Elliot.makeSound();
+	Dog Lana;
+	Lana.makeSound();
 }
