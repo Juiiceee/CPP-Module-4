@@ -35,3 +35,8 @@ Animal::~Animal()
 void Animal::makeSound()
 {
 }
+
+std::string Animal::getType()
+{
+	return (this->_type);
+}
