@@ -7,7 +7,7 @@
 
 int main()
 {
-	Animal *Elliot = new Cat;
+	/*Animal *Elliot = new Cat;
 	Animal *Lana = new Dog;
 	WrongAnimal *Rudeck = new WrongCat;
 	Elliot->makeSound();
@@ -15,8 +15,13 @@ int main()
 	Lana->makeSound();
 	std::cout << "Lana " << Lana->getType() << std::endl;
 	Rudeck->makeSound();
-	std::cout << "Rudeck " << Rudeck->getType() << std::endl;
-	delete Elliot;
+	std::cout << "Rudeck " << Rudeck->getType() << std::endl;*/
+	Animal *tab[4] = {new Cat(), new Cat(), new Dog(), new Dog()};
+
+	for (int i = 0; i < 4; i++)
+		delete tab[i];
+
+	/*delete Elliot;
 	delete Rudeck;
-	delete Lana;
+	delete Lana;*/
 }
