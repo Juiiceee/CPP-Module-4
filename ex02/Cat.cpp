@@ -29,7 +29,7 @@ Cat::~Cat()
 	std::cout << "Destruction d'un Cat\n";
 }
 
-void Cat::makeSound()
+void Cat::makeSound() const
 {
 	std::cout << "Meow!!!\n";
 }

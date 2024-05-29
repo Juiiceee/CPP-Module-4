@@ -29,7 +29,7 @@ Dog::~Dog()
 	delete this->_brain;
 }
 
-void Dog::makeSound()
+void Dog::makeSound() const
 {
 	std::cout << "WAOUF!!!\n";
 }
