@@ -32,10 +32,6 @@ Animal::~Animal()
 	std::cout << "Destruction d'un Animal\n";
 }
 
-void Animal::makeSound()
-{
-}
-
 std::string Animal::getType()
 {
 	return (this->_type);
