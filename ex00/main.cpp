@@ -23,6 +23,7 @@ int main()
 	caca->makeSound();
 	std::cout << "caca " << caca->getType() << std::endl;
 	delete meta;
+	delete caca;
 	delete Elliot;
 	delete Rudeck;
 	delete Lana;
