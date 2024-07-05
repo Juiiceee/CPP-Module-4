@@ -18,6 +18,8 @@ int main()
 	std::cout << "Rudeck " << Rudeck->getType() << std::endl;*/
 	Animal *tab[4] = {new Cat(), new Cat(), new Dog(), new Dog()};
 
+	
+
 	for (int i = 0; i < 4; i++)
 		delete tab[i];
 

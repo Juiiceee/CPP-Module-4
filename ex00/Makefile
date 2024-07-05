@@ -6,7 +6,7 @@
 #    By: lbehr <lbehr@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/20 12:22:14 by lbehr             #+#    #+#              #
-#    Updated: 2024/05/23 14:51:56 by lbehr            ###   ########.fr        #
+#    Updated: 2024/07/05 11:21:06 by lbehr            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRCS	:= Animal.cpp Cat.cpp Dog.cpp main.cpp WrongAnimal.cpp WrongCat.cpp
 OBJS	:= $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 DEPS	:= $(OBJS:.o=.d)
 CC		:= c++
-CFLAGS	:= -std=c++98 -g3
+CFLAGS	:= -Wall -Werror -Wextra -std=c++98 -g3
 RM		:= rm -rf
 DIR_DUP	= mkdir -p $(@D)
 

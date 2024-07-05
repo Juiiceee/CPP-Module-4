@@ -16,10 +16,10 @@ Dog::Dog(const Dog &obj)
 Dog &Dog::operator=(const Dog &obj)
 {
 	std::cout << "Copy assignment operator called\n";
-	if (this != &obj)
-	{
-		this->_type = obj._type;
-	}
+	if (this == &obj)
+		return (*this);
+	delete this->_brain;
+	this->_brain = new Brain(*obj._brain);
 	return *this;
 }
 
